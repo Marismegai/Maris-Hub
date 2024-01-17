@@ -420,7 +420,7 @@ Main.Name = "Main"
 Main.Parent = Frame
 Main.BackgroundColor3 = Color3.fromRGB(85, 165, 175)
 Main.Position = UDim2.new(0.247821882, 0, 0.0668953657, 0)
-Main.Size = UDim2.new(0, 160, 0, 445)
+Main.Size = UDim2.new(0, 530, 0, 350)
 Main.ZIndex = 0
 Main.Image = "rbxassetid://13412525664"
 
