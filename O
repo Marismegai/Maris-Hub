@@ -72,7 +72,7 @@ UICorner.CornerRadius = UDim.new(0, 2)
 UICorner.Parent = MainFrame
 
 Bounty.Font = Enum.Font.GothamBold
-Bounty.Text = "Bounty"
+Bounty.Text = "Fram Chest"
 Bounty.TextColor3 = Color3.fromRGB(230.00000149011612, 230.00000149011612, 230.00000149011612)
 Bounty.TextSize = 20
 Bounty.TextXAlignment = Enum.TextXAlignment.Left
@@ -82,7 +82,7 @@ Bounty.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Bounty.BorderSizePixel = 0
 Bounty.Position = UDim2.new(0.517142832, 0, 0.0775510222, 0)
 Bounty.Size = UDim2.new(0, 118, 0, 37)
-Bounty.Name = "Bounty"
+Bounty.Name = "Fram Chest"
 Bounty.Parent = MainFrame
 
 Night.Font = Enum.Font.GothamBold
@@ -100,7 +100,7 @@ Night.Name = "Maris Hub"
 Night.Parent = MainFrame
 
 TotalEarn.Font = Enum.Font.GothamBold
-TotalEarn.Text = "Total Earned: "
+TotalEarn.Text = "Chest: "
 TotalEarn.TextColor3 = Color3.fromRGB(255, 255, 11.000000294297934)
 TotalEarn.TextSize = 18
 TotalEarn.AnchorPoint = Vector2.new(0.5, 0)
@@ -153,3 +153,9 @@ Target.Position = UDim2.new(0.340000004, 0, 0.673469365, 0)
 Target.Size = UDim2.new(0, 112, 0, 15)
 Target.Name = "Target"
 Target.Parent = MainFrame
+
+local updateStatus = coroutine.create(function() -- ngu qua ma. huuh
+    while _G.loopMemayDi do
+        TotalEarn.Text = "Beli : "..game.Players.LocalPlayer.Data.Beli.Value
+    end
+end)
