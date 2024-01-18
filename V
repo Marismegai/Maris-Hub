@@ -84,7 +84,7 @@ Status.Name = "Status"
 Status.Parent = Frame
 Status.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Status.Position = UDim2.new(0.011616651, 0, 0.399656951, 0)
-Status.Size = UDim2.new(0, 235, 0, 135)
+Status.Size = UDim2.new(0, 135, 0, 235)
 
 UICorner.Parent = Status
 
