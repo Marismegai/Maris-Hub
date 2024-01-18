@@ -235,7 +235,7 @@ Below.Parent = Frame
 Below.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Below.BorderColor3 = Color3.fromRGB(36, 36, 36)
 Below.Position = UDim2.new(0.247821882, 0, 0.672384202, 0)
-Below.Size = UDim2.new(0, 766, 0, 93)
+Below.Size = UDim2.new(0, 350, 0, 93)
 
 UICorner_2.Parent = Below
 
@@ -244,7 +244,7 @@ BlockCorner.Parent = Below
 BlockCorner.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 BlockCorner.BorderColor3 = Color3.fromRGB(36, 36, 36)
 BlockCorner.Position = UDim2.new(-0.000219917798, 0, -0.0050350721, 0)
-BlockCorner.Size = UDim2.new(0, 766, 0, 83)
+BlockCorner.Size = UDim2.new(0, 530, 0, 83)
 
 Credits1.Name = "Credits1"
 Credits1.Parent = Below
@@ -362,7 +362,7 @@ Tabs.Name = "Tabs"
 Tabs.Parent = Frame
 Tabs.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Tabs.Position = UDim2.new(0.011616651, 0, 0.193825036, 0)
-Tabs.Size = UDim2.new(0, 160, 0, 107)
+Tabs.Size = UDim2.new(0, 160, 0, 19)
 
 UICorner_5.Parent = Tabs
 
@@ -407,11 +407,11 @@ ItemsInv.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ItemsInv.BackgroundTransparency = 1.000
 ItemsInv.BorderSizePixel = 0
 ItemsInv.Position = UDim2.new(0.255319148, 0, 0.532710314, 0)
-ItemsInv.Size = UDim2.new(0, 175, 0, 36)
+ItemsInv.Size = UDim2.new(0, 175, 0, 19)
 ItemsInv.Font = Enum.Font.GothamBold
 ItemsInv.Text = "Items (soon)"
 ItemsInv.TextColor3 = Color3.fromRGB(255, 255, 255)
-ItemsInv.TextSize = 23.000
+ItemsInv.TextSize = 18
 ItemsInv.TextTransparency = 0.480
 ItemsInv.TextWrapped = true
 ItemsInv.TextXAlignment = Enum.TextXAlignment.Left
