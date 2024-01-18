@@ -78,7 +78,7 @@ Frame.Parent = KaitunBinhHubGUI
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.499266863, -516, 0.498697907, -291)
-Frame.Size = UDim2.new(0, 1033, 0, 583)
+Frame.Size = UDim2.new(0, 530, 0, 350)
 
 Status.Name = "Status"
 Status.Parent = Frame
