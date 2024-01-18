@@ -1,0 +1,155 @@
+--local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/memaybeohub/Function-Scripts/main/OrionLib.lua"))()
+
+function getDirection(Origin, Position)
+    return (Position - Origin).Unit * 1000
+end
+
+if game:GetService("CoreGui"):FindFirstChild("NightScreen") then
+    game.CoreGui.NightScreen:Destroy()
+end
+a000000009 = os.time()
+
+NightScreen = Instance.new("ScreenGui")
+DropShadowHolder = Instance.new("Frame")
+DropShadow = Instance.new("ImageLabel")
+UIGradient = Instance.new("UIGradient")
+MainFrame = Instance.new("Frame")
+UICorner = Instance.new("UICorner")
+Bounty = Instance.new("TextLabel")
+Night = Instance.new("TextLabel")
+TotalEarn = Instance.new("TextLabel")
+Elapsed = Instance.new("TextLabel")
+ServerEarn = Instance.new("TextLabel")
+Target = Instance.new("TextLabel")
+UIGradient1 = Instance.new("UIGradient")
+Skip = Instance.new("TextButton")
+Hop = Instance.new("TextButton")
+
+NightScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+NightScreen.Name = "NightScreen"
+NightScreen.Parent = game:GetService("CoreGui")
+
+DropShadowHolder.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadowHolder.BackgroundTransparency = 1
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadowHolder.Size = UDim2.new(0, 350, 0, 245)
+DropShadowHolder.ZIndex = 0
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = NightScreen
+
+DropShadow.Image = "rbxassetid://6015897843"
+DropShadow.ImageTransparency = 0.5
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+
+UIGradient.Color =
+    ColorSequence.new {
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(85.0000025331974, 93.00000205636024, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(70.00000342726707, 246.0000005364418, 255))
+}
+UIGradient.Parent = DropShadow
+
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+MainFrame.BackgroundTransparency = 0.6000000238418579
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.5, 0, 0.497461915, 0)
+MainFrame.Size = UDim2.new(0, 350, 0, 245)
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = DropShadow
+
+UICorner.CornerRadius = UDim.new(0, 2)
+UICorner.Parent = MainFrame
+
+Bounty.Font = Enum.Font.GothamBold
+Bounty.Text = "Bounty"
+Bounty.TextColor3 = Color3.fromRGB(230.00000149011612, 230.00000149011612, 230.00000149011612)
+Bounty.TextSize = 20
+Bounty.TextXAlignment = Enum.TextXAlignment.Left
+Bounty.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bounty.BackgroundTransparency = 1
+Bounty.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bounty.BorderSizePixel = 0
+Bounty.Position = UDim2.new(0.517142832, 0, 0.0775510222, 0)
+Bounty.Size = UDim2.new(0, 118, 0, 37)
+Bounty.Name = "Bounty"
+Bounty.Parent = MainFrame
+
+Night.Font = Enum.Font.GothamBold
+Night.Text = "Maris Hub"
+Night.TextColor3 = Color3.fromRGB(83.00000265240669, 160.00000566244125, 255)
+Night.TextSize = 20
+Night.TextXAlignment = Enum.TextXAlignment.Right
+Night.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Night.BackgroundTransparency = 1
+Night.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Night.BorderSizePixel = 0
+Night.Position = UDim2.new(0.177142859, 0, 0.0775510222, 0)
+Night.Size = UDim2.new(0, 105, 0, 37)
+Night.Name = "Maris Hub"
+Night.Parent = MainFrame
+
+TotalEarn.Font = Enum.Font.GothamBold
+TotalEarn.Text = "Total Earned: "
+TotalEarn.TextColor3 = Color3.fromRGB(255, 255, 11.000000294297934)
+TotalEarn.TextSize = 18
+TotalEarn.AnchorPoint = Vector2.new(0.5, 0)
+TotalEarn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TotalEarn.BackgroundTransparency = 1
+TotalEarn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TotalEarn.BorderSizePixel = 0
+TotalEarn.Position = UDim2.new(0.5, 0, 0.387530655, 0)
+TotalEarn.Size = UDim2.new(0, 280, 0, 23)
+TotalEarn.Name = "TotalEarn"
+TotalEarn.Parent = MainFrame
+
+Elapsed.Font = Enum.Font.GothamBold
+Elapsed.Text = "Time Elapsed: "
+Elapsed.TextColor3 = Color3.fromRGB(255, 255, 11.000000294297934)
+Elapsed.TextSize = 18
+Elapsed.AnchorPoint = Vector2.new(0.5, 0)
+Elapsed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Elapsed.BackgroundTransparency = 1
+Elapsed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Elapsed.BorderSizePixel = 0
+Elapsed.Position = UDim2.new(0.5, 0, 0.269163281, 0)
+Elapsed.Size = UDim2.new(0, 280, 0, 20)
+Elapsed.Name = "Elapsed"
+Elapsed.Parent = MainFrame
+
+ServerEarn.Font = Enum.Font.GothamBold
+ServerEarn.Text = "Server Earned: 0"
+ServerEarn.TextColor3 = Color3.fromRGB(255, 255, 11.000000294297934)
+ServerEarn.TextSize = 18
+ServerEarn.AnchorPoint = Vector2.new(0.5, 0)
+ServerEarn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ServerEarn.BackgroundTransparency = 1
+ServerEarn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ServerEarn.BorderSizePixel = 0
+ServerEarn.Position = UDim2.new(0.5, 0, 0.534469426, 0)
+ServerEarn.Size = UDim2.new(0, 280, 0, 19)
+ServerEarn.Name = "ServerEarn"
+ServerEarn.Parent = MainFrame
+
+Target.Font = Enum.Font.GothamBold
+Target.Text = "Target:"
+Target.TextColor3 = Color3.fromRGB(230.00000149011612, 230.00000149011612, 230.00000149011612)
+Target.TextSize = 18
+Target.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Target.BackgroundTransparency = 1
+Target.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Target.BorderSizePixel = 0
+Target.Position = UDim2.new(0.340000004, 0, 0.673469365, 0)
+Target.Size = UDim2.new(0, 112, 0, 15)
+Target.Name = "Target"
+Target.Parent = MainFrame
