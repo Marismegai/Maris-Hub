@@ -84,7 +84,7 @@ Status.Name = "Status"
 Status.Parent = Frame
 Status.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Status.Position = UDim2.new(0.011616651, 0, 0.399656951, 0)
-Status.Size = UDim2.new(0, 235, 0, 336)
+Status.Size = UDim2.new(0, 235, 0, 235)
 
 UICorner.Parent = Status
 
@@ -98,7 +98,7 @@ Account.Size = UDim2.new(0, 194, 0, 21)
 Account.Font = Enum.Font.GothamBold
 Account.Text = "Account"
 Account.TextColor3 = Color3.fromRGB(255, 255, 255)
-Account.TextSize = 23.000
+Account.TextSize = 18
 Account.TextTransparency = 0.790
 Account.TextWrapped = true
 Account.TextXAlignment = Enum.TextXAlignment.Right
