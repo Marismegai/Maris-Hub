@@ -113,7 +113,7 @@ Stats.Size = UDim2.new(0, 194, 0, 21)
 Stats.Font = Enum.Font.GothamBold
 Stats.Text = "Stats"
 Stats.TextColor3 = Color3.fromRGB(255, 255, 255)
-Stats.TextSize = 23.000
+Stats.TextSize = 18
 Stats.TextTransparency = 0.790
 Stats.TextWrapped = true
 Stats.TextXAlignment = Enum.TextXAlignment.Right
@@ -128,7 +128,7 @@ Fragments.Size = UDim2.new(0, 222, 0, 34)
 Fragments.Font = Enum.Font.GothamBold
 Fragments.Text = "Fragments : 0"
 Fragments.TextColor3 = Color3.fromRGB(255, 255, 255)
-Fragments.TextSize = 23.000
+Fragments.TextSize = 18
 Fragments.TextWrapped = true
 Fragments.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -142,7 +142,7 @@ Beli.Size = UDim2.new(0, 223, 0, 30)
 Beli.Font = Enum.Font.GothamBold
 Beli.Text = "Beli : 0"
 Beli.TextColor3 = Color3.fromRGB(255, 255, 255)
-Beli.TextSize = 23.000
+Beli.TextSize = 18
 Beli.TextWrapped = true
 Beli.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -170,7 +170,7 @@ Defense.Size = UDim2.new(0, 222, 0, 18)
 Defense.Font = Enum.Font.GothamBold
 Defense.Text = "Defense :"
 Defense.TextColor3 = Color3.fromRGB(255, 255, 255)
-Defense.TextSize = 23.000
+Defense.TextSize = 18
 Defense.TextWrapped = true
 Defense.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -184,7 +184,7 @@ Melee.Size = UDim2.new(0, 222, 0, 18)
 Melee.Font = Enum.Font.GothamBold
 Melee.Text = "Melee :"
 Melee.TextColor3 = Color3.fromRGB(255, 255, 255)
-Melee.TextSize = 23.000
+Melee.TextSize = 18
 Melee.TextWrapped = true
 Melee.TextXAlignment = Enum.TextXAlignment.Left
 
