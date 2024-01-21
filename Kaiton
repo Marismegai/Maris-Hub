@@ -15,7 +15,73 @@ getgenv().Config = {
     }
 }
 
+-- Variables
+
+local DCSettings = Config["Discord"]
+local FSSettings = Config["Autofarm"]
+
+function TP(P1)
+    Distance = (P1.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+    if Distance < 250 then
+        Speed = 600
+    elseif Distance < 500 then
+        Speed = 500
+    elseif Distance < 1000 then
+        Speed = 400
+    elseif Distance >= 1000 then
+        Speed = 250
+    end
+    game:GetService("TweenService"):Create(
+        game.Players.LocalPlayer.Character.HumanoidRootPart,
+        TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear),
+        {CFrame = P1}
+    ):Play()
+end
+
+function TP2(P1)
+	Distance = (P1.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+	if Distance < 1000 then
+		Speed = 500
+	elseif Distance >= 1000 then
+		Speed = 350
+	end
+    game:GetService("TweenService"):Create(
+        game.Players.LocalPlayer.Character.HumanoidRootPart,
+        TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear),
+        {CFrame = P1}
+    ):Play()
+    Clip = true
+    wait(Distance/Speed)
+    Clip = false
+end
+
+function TP(P)
+	Distance = (P.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+	if Distance < 10 then
+		Speed = 1000
+	elseif Distance < 170 then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = P
+		Speed = 350
+	elseif Distance < 1000 then
+		Speed = 350
+	elseif Distance >= 1000 then
+		Speed = 250
+	end
+	game:GetService("TweenService"):Create(
+		game.Players.LocalPlayer.Character.HumanoidRootPart,
+		TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear),
+		{CFrame = P}
+	):Play()
+end
+
+-- gui // line 662 to continue
+
+SelectToolWeapon = "Combat"
+
+-- Instances:
+
 HttpService = game:GetService("HttpService")
+
 --local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/memaybeohub/Function-Scripts/main/OrionLib.lua"))()
 
 function getDirection(Origin, Position)
