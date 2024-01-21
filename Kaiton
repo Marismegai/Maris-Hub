@@ -82,8 +82,6 @@ SelectToolWeapon = "Combat"
 
 HttpService = game:GetService("HttpService")
 
---local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/memaybeohub/Function-Scripts/main/OrionLib.lua"))()
-
 NightScreen = Instance.new("ScreenGui")
 DropShadowHolder = Instance.new("Frame")
 DropShadow = Instance.new("ImageLabel")
