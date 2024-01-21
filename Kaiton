@@ -84,15 +84,6 @@ HttpService = game:GetService("HttpService")
 
 --local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/memaybeohub/Function-Scripts/main/OrionLib.lua"))()
 
-function getDirection(Origin, Position)
-    return (Position - Origin).Unit * 1000
-end
-
-if game:GetService("CoreGui"):FindFirstChild("NightScreen") then
-    game.CoreGui.NightScreen:Destroy()
-end
-a000000009 = os.time()
-
 NightScreen = Instance.new("ScreenGui")
 DropShadowHolder = Instance.new("Frame")
 DropShadow = Instance.new("ImageLabel")
