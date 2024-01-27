@@ -1,0 +1,8 @@
+--tha tao di đừng đeo bám t nữa
+
+
+
+
+_G.Boss = "https://discord.com/api/webhooks/1178166082624823296/kLjlHchY6Z0voqd7AhrV3Lj8DOWjoNG3RL8AhtlxmSpr7O99qXsJtoL5UOOQwXZijKTO"
+_G.daobian = "https://discord.com/api/webhooks/1178166082624823296/kLjlHchY6Z0voqd7AhrV3Lj8DOWjoNG3RL8AhtlxmSpr7O99qXsJtoL5UOOQwXZijKTO"
+_G.FullMoon = "https://discord.com/api/webhooks/1178166082624823296/kLjlHchY6Z0voqd7AhrV3Lj8DOWjoNG3RL8AhtlxmSpr7O99qXsJtoL5UOOQwXZijKTO"
